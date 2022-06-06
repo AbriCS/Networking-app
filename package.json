@@ -1,0 +1,25 @@
+{
+  "name": "networking-app",
+  "version": "1.0.0",
+  "description": "Social Networking app using Express.js and Mongoose",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbriCS/Networking-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbriCS/Networking-app/issues"
+  },
+  "homepage": "https://github.com/AbriCS/Networking-app#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  }
+}
