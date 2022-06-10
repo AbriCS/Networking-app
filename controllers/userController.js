@@ -48,10 +48,30 @@ const userControllers={
             }
             res.json(delUser)
         }).catch((err) => res.status(400).json(err));
+    },
+
+    addFriends(req, res){
+    User.findOneAndUpdate({_id:req.params.userId},{$addToSet:{friends:req.body}},{new:true})
+    .then((newFriend)=>{
+        if(!newFriend){
+            res.status(404).json({message:"no user found with this id"})  
+        }
+        res.json(newFriend)
+    }).catch((err) => res.status(400).json(err));
+
+},
+
+    removeFriends(req, res){
+        User.findOneAndUpdate({_id:req.params.userId}, {$pull:{friends:{friendId:req.params.friendId}}},{new:true})
+        .then((removeFriend)=>{
+            if(!removeFriend){
+            res.status(404).json({message:"no user found with this id"})     
+            }
+            res.json(removeFriend)
+        }).catch((err)=> res.status(400).json(err));
     }
 
 
-    //updateUser, deleteUser, addFriend, removeFriend
 
     
 }
