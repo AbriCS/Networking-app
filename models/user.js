@@ -1,5 +1,6 @@
 const {Schema, model} = require ("mongoose")
 
+
 const userSchema = new Schema ({
     username:{
         type:String,
@@ -8,7 +9,7 @@ const userSchema = new Schema ({
         trim:true,
     },
     email:{
-        ype:String,
+        type:String,
         required:true,
         unique:true,
         match: [/.+@.+\..+/, 'It has to match email address!']
