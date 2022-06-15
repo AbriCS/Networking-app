@@ -52,7 +52,7 @@ const userControllers={
     },
 
     addFriends(req, res){
-    User.findOneAndUpdate({_id:req.params.userId},{$addToSet:{friends:req.body}},{new:true})
+    User.findOneAndUpdate({_id:req.params.userId},{$addToSet:{friends:req.params.friendId}},{new:true})
     .then((newFriend)=>{
     console.log (newFriend)
         if(!newFriend){
@@ -64,7 +64,7 @@ const userControllers={
    },
 
     removeFriends(req, res){
-        User.findOneAndUpdate({_id:req.params.userId}, {$pull:{friends:{friendId:req.params.friendId}}},{new:true})
+        User.findOneAndUpdate({_id:req.params.userId}, {$pull:{friends:req.params.friendId}},{new:true})
         .then((removeFriend)=>{
             if(!removeFriend){
                 return res.status(404).json({message:"no user found with this id"})     
@@ -72,9 +72,6 @@ const userControllers={
             res.json(removeFriend)
         }).catch((err)=> res.status(400).json(err));
     }
-
-
-
     
 }
 
