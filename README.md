@@ -28,28 +28,27 @@ Once the application is running on the Localhost the user may Create, Read, Upda
 
 
 ```
-Below is the link to an explanatory video demonstrating CRUD operations.
+Below are the links to 4 explanatory videos demonstrating CRUD operations.
 ```
-
-[Get Method to Get all thoughts](https://drive.google.com/file/d/1YS7eqvh3LgngyPvb9W_8CiedrNHyiWXP/view?usp=sharing)
-[Put Method to update a thought](https://drive.google.com/file/d/19GqjbRtF3z1nMPNqRqTrhRbuJe11DhHO/view?usp=sharing)
-[Post Method to create a user](https://drive.google.com/file/d/1GivryJkbQ5tEpyuHlpaZY3WYOlvjQVv3/view?usp=sharing)
-[Delete Method to delete a user](https://drive.google.com/file/d/1jlkuqiV7eLcMsNpCA4vk0Ww4WJY3PG_W/view?usp=sharing)
+- Video 1. [Post method to create a user.](https://drive.google.com/file/d/14tZgyvEHkjx90444NG8KwjPEKSvvSG8e/view?usp=sharing)
+- Video 2. [Get method to get all thoughts.](https://drive.google.com/file/d/1YS7eqvh3LgngyPvb9W_8CiedrNHyiWXP/view?usp=sharing)
+- Video 3. [Put method to update a thought.](https://drive.google.com/file/d/19GqjbRtF3z1nMPNqRqTrhRbuJe11DhHO/view?usp=sharing)
+- Video 4. [Delete method to delete a user.](https://drive.google.com/file/d/1jlkuqiV7eLcMsNpCA4vk0Ww4WJY3PG_W/view?usp=sharing)
 
 
 ## Screenshot
 
-This is a screenshot of the output.
+This is a screenshot of the output in Postman.
 
-[Rendered Application](./assets/html-render.png)
+![Rendered Application](./assets/PostmanofDeployedApp.png)
 
 
 ## Contact
-
+```
 Email Address: AbriCSltd@gmail.com
-
+```
 Linkedin Profile: [LinkedIn](https://www.linkedin.com/in/iteration50/)
 
-Github: [Profile](https://github.com/Abrics)
+Github: [Profile](https://abrics.github.io/Abri-CS/)
 
-Github: [Repo](https://github.com/Abrics/Team-Profile-Generator)
+Github: [Repo](https://github.com/Abrics/Networking-app)
